@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey</title>
+        <link type="text/css" rel="stylesheet" href="podcastsurvey.css">
+    </head>
+    <body>
+      <section id="title">
+        <h1>Podcast Survey!</h1>
+      </section>
+      <hr>
+      <div class="form_outer">
+        <section id="description">
+          <p>I am running a survey to
+            learn more about what podcasts
+            people are finding the most interesting and why.
+            Your input is greatly appreciated! Thank You!
+          </p>
+        </section>
+        <hr>
+        <form id="survey_form" method="get" action="">
+          <section>
+            <p>* - required</p>
+          </section>
+          <section id="name">
+            <div class="survey_questions_left_tab">
+              <label id="name-label" for="name">* What's Your Name?</label>
+            </div>
+            <div class="input_right_tab">
+              <input type="text" name="name" class="inputs" placeholder="Enter name here" required>
+            </div>
+          </section>
+          <section id="email">
+            <div class="survey_questions_left_tab">
+              <label id="email-label" for="email">* What's Your E-Mail?</label><br>
+            </div>
+            <div class="input_right_tab">
+              <input type="email" name="email" class="inputs" placeholder="Enter email here" required>
+            </div>
+          </section>
+          <section id="number">
+            <div class="survey_questions_left_tab">
+              <label id="number-label" for="number">* How Long Have You Been Listening to Podcasts? (in years)</label><br>
+            </div>
+            <div class="input_right_tab">
+              <input type="number" name="number" id="number" class="inputs" min="1" max="100" placeholder="1" required>
+            </div>
+          </section>
+
+          <section id="dropdown">
+            <div class="survey_questions_left_tab">
+              <label for="currentPos">What do you like to do while listening to podcasts?</label><br>
+            </div>
+            <div class="input_right_tab">
+              <select id="dropdown" name="currentPos">
+                <option disabled selected value>Select An Option</option>
+                <option value="jog/run">Jog / Run</option>
+                <option value="cook">Cook</option>
+                <option value="cleaning/chores">Cleaning / Chores</option>
+                <option value="bathing/showering">Bath / Shower</option>
+                <option value="coding">Coding</option>
+              </select>
+            </div>
+          </section>
+          <section class="occupation">
+            <div class="survey_questions_left_tab">
+              <label>* How Would You Describe Your Current Occupation? (Select One)</label>
+            </div>
+            <div class="input_right_tab" "radio_buttons">
+              <fieldset id="occupation_radio_buttons" style="border: none;">
+                <li><input type="radio" name="occupation_radio_buttons">Student</input></li>
+                <li><input type="radio" name="occupation_radio_buttons">Full-Time Worker</input></li>
+                <li><input type="radio" name="occupation_radio_buttons">Part-Time Worker</input></li>
+                <li><input type="radio" name="occupation_radio_buttons">Freelancer</input></li>
+                <li><input type="radio" name="occupation_radio_buttons">Retired</input></li>
+                <li><input type="radio" name="occupation_radio_buttons" class="other_option_radio_button">Other</input></li>
+              </fieldset>
+            </div>
+          </section>
+          <section id="topics">
+            <div class="survey_questions_left_tab">
+              <label>What sort of topics do you enjoy listening about?</label>
+            </div>
+            <div class="input_right_tab">
+              <li><label><input name="topic" value="1" type="checkbox">Music</label></li>
+              <li><label><input name="topic" value="2" type="checkbox">News & Politics</label></li>
+              <li><label><input name="topic" value="3" type="checkbox">Sports</label></li>
+              <li><label><input name="topic" value="4" type="checkbox">Comedy</label></li>
+              <li><label><input name="topic" value="5" type="checkbox">Talk Show</label></li>
+
+            </div>
+          </section>
+          <section id="comments">
+            <div class="survey_questions_left_tab">
+              <label for="text">What do you like about podcasts?</label>
+            </div>
+            <div class="input_right_tab">
+              <textarea class="inputs" placeholder="Enter here"></textarea>
+            </div>
+          </section>
+          <section>
+            <button id="submit" type="submit">Submit</button>
+          </section>
+        </form>
+      </div>
+    </body>
+</html>
